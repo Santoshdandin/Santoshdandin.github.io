@@ -1,15 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./Components/About";
+import Skills from "./Components/Skills"
+import Home from "./Components/Home"
+import NavBar from "./Components/NavBar"
+import SocialLinks from "./Components/SocialLinks"
+import Contact from "./Components/Contact";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>SANTOSH</h1>
-       <img class="image" src="https://avatars.githubusercontent.com/u/97119715?v=4"/>
-      </header>
-    </div>
-  );
+   <div>
+    <NavBar />
+    <Home/>
+<About/>
+<Skills/>
+
+<Contact/>
+    <SocialLinks/>
+   </div>
+    
+  )
 }
 
-export default App;
+
