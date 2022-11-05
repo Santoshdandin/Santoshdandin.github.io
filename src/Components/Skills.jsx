@@ -7,6 +7,8 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import chakraui from "../assets/chakra-ui.png";
+import GithubStat from "./GithubStat";
 
 const Skills = () => {
 
@@ -59,6 +61,12 @@ const techs = [
         title:"Github",
         style:"shadow-gray-500"
     },
+    {
+        id:9,
+        src:chakraui,
+        title:"Chakra-UI",
+        style:"shadow-cyan-500"
+    },
 ]
 
   return (
@@ -77,11 +85,11 @@ const techs = [
 
 
 
-            <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 '>
+            <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0 '>
 
             {techs.map(({id,src,title,style})=>(
 
-<div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+<div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-full flex flex-col w-40 h-40 justify-center ${style}`}>
                     <img src={src} alt="" className='w-20 mx-auto' />
                     <p className='mt-4'>{title}</p>
                 </div>
@@ -91,7 +99,9 @@ const techs = [
 
                 
             </div>
+            <GithubStat/>
         </div>
+        
 
     </div>
   )
