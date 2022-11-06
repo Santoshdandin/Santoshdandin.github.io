@@ -1,6 +1,7 @@
 import React from "react";
 import reliancedigital from "../assets/projects/reliancedigital.png";
 import jcrew from "../assets/projects/jcrew.png";
+import kickstarter from "../assets/projects/kickstarter.png";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -91,7 +92,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      src: jcrew,
+      src: kickstarter,
       title:"Kickstarter",
       live:'https://peaceful-taffy-b0242b.netlify.app/',
       git:'https://github.com/sudarshan441/mammoth-zoo-7517',
