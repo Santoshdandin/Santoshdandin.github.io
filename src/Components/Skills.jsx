@@ -3,11 +3,14 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import mongo from "../assets/mongo.png";
+import express from "../assets/express.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import chakraui from "../assets/chakra-ui.png";
+import redux from "../assets/redux.png";
+import nodejs from "../assets/nodejs.png";
+
 import GithubStat from "./GithubStat";
 
 const Skills = () => {
@@ -37,23 +40,32 @@ const techs = [
         title:"React",
         style:"shadow-blue-500"
     },
+
     {
-        id:5,
-        src:tailwind,
-        title:"Tailwind",
-        style:"shadow-sky-400"
+        id:10,
+        src:redux,
+        title:"Redux",
+        style:"shadow-purple-500"
     },
+
+   
     {
         id:6,
-        src:nextjs,
-        title:"Nextjs",
-        style:"shadow-white"
+        src:mongo,
+        title:"Mongo-DB",
+        style:"shadow-green-400"
     },
     {
         id:7,
-        src:graphql,
-        title:"GraphQl",
-        style:"shadow-pink-400"
+        src:express,
+        title:"Express",
+        style:"shadow-gray-500"
+    },
+    {
+        id:11,
+        src:nodejs,
+        title:"Node.js",
+        style:"shadow-green-500"
     },
     {
         id:8,
@@ -66,6 +78,13 @@ const techs = [
         src:chakraui,
         title:"Chakra-UI",
         style:"shadow-cyan-500"
+    },
+    
+    {
+        id:5,
+        src:tailwind,
+        title:"Tailwind",
+        style:"shadow-sky-400"
     },
 ]
 
@@ -85,7 +104,7 @@ const techs = [
 
 
 
-            <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0 '>
+            <div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0 '>
 
             {techs.map(({id,src,title,style})=>(
 

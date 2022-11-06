@@ -19,8 +19,8 @@ const About = () => {
           <div>
             <img
               src={Coding}
-              alt="coding photo"
-              className="rounded-3xl mx-auto w-1/2  md:w-[1500px] pr-10"
+              alt="coding"
+              className="rounded-3xl mx-auto w-[500px]  md:w-[2000px] pr-10"
             />
           </div>
 
@@ -33,8 +33,7 @@ const About = () => {
                 <span className="text-rose-500 hover:bg-rose-800 hover:text-white cursor-pointer">
                   Santosh
                 </span>{" "}
-                , self-motivated, hardworking aspiring full-stack web developer
-                with in-depth knowledge of frontend. I love to build
+                , self-motivated, hardworking aspiring full-stack web developer. I love to build
                 websites/application that serves the world. and always want to
                 enhance my knowledge & adpot new technologies that make impact
                 on people.

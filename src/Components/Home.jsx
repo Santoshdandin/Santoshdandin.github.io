@@ -13,8 +13,8 @@ const Home = () => {
 
           <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm <span className="text-rose-700">Santosh</span> </h2>
 
-          <h4 className="text-2xl sm:text-1xl font-bold text-white">Full Stack Developer</h4>
-          <p className="text-gray-500 py-4 max-w-md">I’m a FullStack web developer. Focused on building products that will make people's lives better. I love to learn new things and I am always open to learn new technologies.</p>
+          <h4 className="text-2xl sm:text-1xl font-bold text-white">Full Stack web Developer</h4>
+          <p className="text-gray-500 py-4 max-w-md">I’m a Full-Stack web developer. Focused on building products that will make people's lives better. I love to learn new things and I am always open to learn new technologies.</p>
           
 
           <div>
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
 
         <div>
-            <img src={HeroImage}  alt="profile photo" className="rounded-3xl mx-auto w-1/2 bg-slate-600 md:w-2/3"/>
+            <img src={HeroImage}  alt="hero" className="rounded-3xl mx-auto w-1/2 bg-slate-600 md:w-2/3"/>
         </div>
       </div>
     </div>
