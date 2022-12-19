@@ -125,7 +125,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="h-full w-full bg-gradient-to-b from-gray-800 to-black  text-white items-center pt-20 "
+      className="h-full w-full bg-gray-800  text-white items-center pt-20 "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-2 ">
@@ -139,7 +139,7 @@ const Projects = () => {
 
         {portfolios.map(({ id, src,title,description,techs,live,git }) => (
           
-            <div key={id} className="shadow-md shadow-gray-600  rounded-lg items-center justify-center  hover:scale-110 hover:bg-gray-900">
+            <div key={id} className="shadow-md shadow-gray-600  rounded-lg items-center justify-center cursor-pointer">
               <img
                 src={src}
                 alt=""

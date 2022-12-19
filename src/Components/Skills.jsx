@@ -91,7 +91,7 @@ const techs = [
   return (
     <div
       name="skills"
-      className="h-full w-full bg-gradient-to-b from-black to-gray-800  text-white items-center pt-20"
+      className="h-full w-full bg-gray-800  text-white items-center pt-20"
     >
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
 
@@ -108,7 +108,7 @@ const techs = [
 
             {techs.map(({id,src,title,style})=>(
 
-<div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-full flex flex-col w-40 h-40 justify-center ${style}`}>
+<div key={id} className={`shadow-md  hover:scale-105 duration-500 py-2 rounded-full flex flex-col w-40 h-40 justify-center ${style}`}>
                     <img src={src} alt="" className='w-20 mx-auto' />
                     <p className='mt-4'>{title}</p>
                 </div>
