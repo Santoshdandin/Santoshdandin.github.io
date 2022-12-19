@@ -40,6 +40,15 @@ const Contact = () => {
 
         
                     </div>
+
+                    <div className='flex justify-center gap-8 '>
+                      
+                    <p className='py-6'>Contact : +91 7760621468</p>
+                    <p className='py-6'>Email : santoshsdandin@gmail.com</p>
+        
+
+        
+                    </div>
                 </div>
             </div>
        

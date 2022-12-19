@@ -2,6 +2,8 @@ import React from "react";
 import reliancedigital from "../assets/projects/reliancedigital.png";
 import jcrew from "../assets/projects/jcrew.png";
 import kickstarter from "../assets/projects/kickstarter.png";
+import delicious from "../assets/projects/delicious.png";
+import tatamg from "../assets/projects/tatamg.png"
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -9,6 +11,9 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import chakraui from "../assets/chakra-ui.png";
 import redux from "../assets/redux.png";
+import mongo from "../assets/mongo.png";
+import express from "../assets/express.png";
+import nodejs from "../assets/nodejs.png";
 
 
 const Projects = () => {
@@ -94,7 +99,7 @@ const Projects = () => {
       id: 3,
       src: kickstarter,
       title:"Kickstarter",
-      live:'https://peaceful-taffy-b0242b.netlify.app/',
+      live:'https://symphonious-genie-ba7aaf.netlify.app/',
       git:'https://github.com/sudarshan441/mammoth-zoo-7517',
       description:" Kickstarter is an American public benefit corporation based in Brooklyn, New York, that maintains a global crowdfunding platform focused on creativity.",
       techs: [
@@ -117,6 +122,120 @@ const Projects = () => {
           style: "shadow-yellow-500",
         },
         
+      ],
+    },
+    {
+      id: 4,
+      src: delicious,
+      title:"Delicious",
+      live:'https://deliciousbanglore.netlify.app/',
+      git:'https://github.com/prabhash1475/delicious',
+      description:"Licious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat & seafood, delivered straight to your doorstep.",
+      techs: [
+        {
+          id: 1,
+          src: html,
+          title: "HTML",
+          style: "shadow-orange-500",
+        },
+        {
+          id: 2,
+          src: css,
+          title: "CSS",
+          style: "shadow-blue-500",
+        },
+        {
+          id: 3,
+          src: javascript,
+          title: "Javascript",
+          style: "shadow-yellow-500",
+        },
+        {
+          id: 4,
+          src: reactImage,
+          title: "React",
+          style: "shadow-blue-500",
+        },
+    
+        {
+          id: 5,
+          src: redux,
+          title: "Redux",
+          style: "shadow-purple-500",
+        },
+    
+        {
+          id: 6,
+          src: chakraui,
+          title: "Chakra-UI",
+          style: "shadow-cyan-500",
+        },
+      ],
+    },
+    {
+      id: 5,
+      src: tatamg,
+      title:"TATA 1mg",
+      live:'https://911-com.vercel.app/',
+      git:'https://github.com/Rohit1-1/phobic-turn-8444',
+      description:"Tata 1mg, previously 1mg, is a healthcare platform based in Gurugram, India. It provides services, including e-pharmacy, diagnostics, e-consultation and health content.",
+      techs: [
+        {
+          id: 1,
+          src: html,
+          title: "HTML",
+          style: "shadow-orange-500",
+        },
+        {
+          id: 2,
+          src: css,
+          title: "CSS",
+          style: "shadow-blue-500",
+        },
+        {
+          id: 3,
+          src: javascript,
+          title: "Javascript",
+          style: "shadow-yellow-500",
+        },
+        {
+          id: 4,
+          src: reactImage,
+          title: "React",
+          style: "shadow-blue-500",
+        },
+    
+        {
+          id: 5,
+          src: redux,
+          title: "Redux",
+          style: "shadow-purple-500",
+        },
+    
+        {
+          id: 6,
+          src: chakraui,
+          title: "Chakra-UI",
+          style: "shadow-cyan-500",
+        },
+        {
+          id: 7,
+          src: mongo,
+          title:"Mongo-DB",
+          style:"shadow-green-400"
+        },
+        {
+          id:8,
+          src:express,
+          title:"Express",
+          style:"shadow-gray-500"
+      },
+      {
+          id:9,
+          src:nodejs,
+          title:"Node.js",
+          style:"shadow-green-500"
+      },
       ],
     },
   ];
