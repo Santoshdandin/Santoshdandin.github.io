@@ -45,7 +45,7 @@ const About = () => {
 
             <button
             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 shadow-lg hover:shadow-cyan-500 cursor-pointer">
-              <a  href="/resume.pdf"
+              <a  href="/santosh-resume.pdf"
               target="_blank" download={true}  className=" border-2px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200 ">Resume </a>
               <span>
                 <MdOutlineArrowDownward size={25} className="ml-1" />

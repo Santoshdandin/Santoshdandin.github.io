@@ -165,13 +165,15 @@ const Projects = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md ">
-                  <a href={live} target='_blank' rel="noreferrer">Demo</a>
+              <a href={live} target='_blank' rel="noreferrer" className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md  text-center "> <button >
+                  Demo
                   
-                </button>
-                <button className="w-1/2 px-1 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md ">
-                <a href={git} target='_blank' rel="noreferrer">Github</a>
-                </button>
+                </button></a>
+                
+                <a href={git} target='_blank' rel="noreferrer" className="w-1/2 px-1 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md text-center ">
+                Github
+                </a>
+                
               </div>
             </div>
           

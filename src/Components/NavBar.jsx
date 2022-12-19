@@ -43,7 +43,7 @@ const NavBar = () => {
             <Link to={link} smooth duration={500}>{link}</Link>
           </li>
         ))}
-       <button className="hover:scale-105 duration-200 rounded-md bg-gradient-to-r hover:shadow-cyan-500 from-cyan-500 to-blue-500 px-3 py-1 flex items-center text-white"><a  href="/resume.pdf"
+       <button className="hover:scale-105 duration-200 rounded-md bg-gradient-to-r hover:shadow-cyan-500 from-cyan-500 to-blue-500 px-3 py-1 flex items-center text-white"><a  href="/santosh-resume.pdf"
               target="_blank" className=" border-2px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200 ">Resume</a></button> 
       </ul>
 
