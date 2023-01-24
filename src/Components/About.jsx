@@ -43,14 +43,14 @@ const About = () => {
             <br />
             
 
-            <button
-            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 shadow-lg hover:shadow-cyan-500 cursor-pointer">
-              <a  href="/santosh-resume.pdf"
-              target="_blank" download={true}  className=" border-2px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200 ">Resume </a>
+            
+              <a download={true}  href="/santosh-resume.pdf" onClick={()=>window.open("/santosh-resume.pdf")} 
+              target="_blank"   className=" border-2px-4 cursor-pointer capitalize font-medium text-white  duration-200 "><button
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 shadow-lg hover:shadow-cyan-500 cursor-pointer">Resume 
               <span>
                 <MdOutlineArrowDownward size={25} className="ml-1" />
               </span>
-            </button>
+            </button> </a>
 
           </div>
         </div>

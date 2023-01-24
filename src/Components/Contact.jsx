@@ -49,7 +49,19 @@ const Contact = () => {
 
         
                     </div>
+
+                    <div className='flex justify-center gap-8 '>
+                      
+                    <p className='py-6'>@InspiredBy-<a href=" https://github.com/theyashpatel" target="_blank">theyashpatel</a></p>
+                    
+        
+
+        
+                    </div>
+
+                    
                 </div>
+                
             </div>
        
   )
