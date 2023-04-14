@@ -9,24 +9,28 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
+      heading: "Home",
     },
     {
       id: 2,
-      link: "about Me",
+      link: "about",
+      heading: "About Me",
     },
     {
       id: 3,
       link: "skills",
+      heading: "Skills",
     },
     {
       id: 4,
       link: "projects",
+      heading: "Projects",
     },
     {
       id: 5,
       link: "contact",
+      heading: "Contact",
     },
-    
   ];
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed ">
@@ -35,12 +39,12 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex ">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link,heading }) => (
           <li
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 "
           >
-            <Link to={link} smooth duration={500}>{link}</Link>
+            <Link to={link} smooth duration={500}>{heading}</Link>
           </li>
         ))}
        <a  href="/santosh-resume.pdf"

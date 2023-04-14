@@ -244,8 +244,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="h-full w-full bg-gray-800  text-white items-center pt-20 "
-    >
+      className="h-full w-full bg-gray-800  text-white items-center pt-20 ">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-2 ">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -254,49 +253,57 @@ const Projects = () => {
           <p className="py-4">Check out some of my projects right here</p>
         </div>
 
-        <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 ">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12  justify-center   ">
+          {portfolios.map(
+            ({ id, src, title, description, techs, live, git }) => (
+              <div
+                key={id}
+                className="shadow-md shadow-gray-600  rounded-lg items-center justify-center cursor-pointer">
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
 
-        {portfolios.map(({ id, src,title,description,techs,live,git }) => (
-          
-            <div key={id} className="shadow-md shadow-gray-600  rounded-lg items-center justify-center cursor-pointer">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+                <p className="text-2xl font-bold py-2 text-cyan-700 flex items-center justify-center">
+                  {title}
+                </p>
+                <p className="text-sm m-2 text-gray-400">{description}</p>
 
-              <p className="text-2xl font-bold py-2 text-cyan-700 flex items-center justify-center">
-                {title}
-              </p>
-              <p className="text-sm m-2 text-gray-400">
-                {description}
-              </p>
-
-              <div className="w-full flex items-center justify-center text-center py-4 px-2 ">
+                <div className="w-full flex flex-wrap items-center justify-center text-center py-4 px-2 ">
                 {techs.map(({ id, src, style }) => (
                   <div
                     key={id}
-                    className={`shadow-md hover:scale-105 duration-500 mx-2 py-2 rounded-full flex flex-col w-[40px] h-[40px] justify-center ${style}`}
+                    className={`shadow-md hover:scale-105 duration-500 mx-2 mt-4 py-2 rounded-full flex flex-col w-[40px] h-[40px]  justify-center ${style}`}
                   >
-                    <img src={src} alt="" className="w-6 mx-auto" />
+                    <img src={src} alt="" className="w-6 mx-auto py-2" />
                   </div>
                 ))}
               </div>
 
-              <div className="flex items-center justify-center">
-              <a href={live} target='_blank' rel="noreferrer" className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md  text-center "> <button >
-                  Demo
+                <div className="flex items-center justify-center">
+                  <a
+                    href={live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md  text-center ">
+                    {" "}
+                    <button>Demo</button>
+                  </a>
+
                   
-                </button></a>
-                
-                <a href={git} target='_blank' rel="noreferrer" className="w-1/2 px-1 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md text-center ">
-                Github
-                </a>
-                
+
+                  <a
+                    href={git}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-1/2  px-6 py-3 m-4 duration-200 hover:scale-105 border border-gray-600 rounded-md text-center ">
+                    <button>Github</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          
-        ))}
+            )
+          )}
         </div>
       </div>
     </div>

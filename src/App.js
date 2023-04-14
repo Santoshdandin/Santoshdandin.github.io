@@ -11,17 +11,16 @@ import Projects from "./Components/Projects";
 
 export default function App() {
   return (
-   <div>
-    <NavBar />
-    <Home/>
-<About/>
-<Skills/>
-<Projects/>
-<Contact/>
-    {/* <SocialLinks/> */}
-   </div>
-    
-  )
+    <div>
+      <NavBar  />
+      <Home />
+      <About/>
+      <Skills />
+      <Projects/>
+      <Contact />
+      {/* <SocialLinks/> */}
+    </div>
+  );
 }
 
 
